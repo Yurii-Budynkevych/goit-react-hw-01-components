@@ -1,16 +1,16 @@
+import Profile from './Profile/Profile';
+import profiles from '../user';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Profile
+        username={profiles.username}
+        tag={profiles.tag}
+        location={profiles.location}
+        avatar={profiles.avatar}
+        stats={profiles.stats}
+      />
     </div>
   );
 };
