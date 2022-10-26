@@ -18,5 +18,7 @@ export const StatsList = styled.ul`
 
   font-style: italic;
   font-size: 24px;
-  color: ${props => props.theme.colors.gold};
+  color: ${function (props) {
+    return props.theme.colors.gold;
+  }};
 `;
