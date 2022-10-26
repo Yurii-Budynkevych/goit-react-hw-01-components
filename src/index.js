@@ -7,7 +7,9 @@ import './index.css';
 const theme = {
   colors: {
     gold: '#FFD700',
+    tomato: 'tomato',
   },
+  sizes: [12, 24, 36, 48],
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(
