@@ -13,4 +13,6 @@ export const List = styled.ul`
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin: 0;
+  padding: 0;
 `;
