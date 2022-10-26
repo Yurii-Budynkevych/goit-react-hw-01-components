@@ -4,6 +4,8 @@ import Statistics from './Statistics/Statistics';
 import data from '../data';
 import Friends from './Friends/Friends';
 import friendData from '../friends';
+import Transactions from './Transactions/Transactions';
+import transactionsData from '../transactions';
 
 export const App = () => {
   return (
@@ -20,6 +22,8 @@ export const App = () => {
       <Statistics stats={data} />
 
       <Friends friends={friendData} />
+
+      <Transactions items={transactionsData} />
     </div>
   );
 };
