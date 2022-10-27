@@ -1,11 +1,11 @@
 import Profile from './Profile/Profile';
-import profiles from '../user';
+import profiles from '../components/Data/user';
 import Statistics from './Statistics/Statistics';
-import data from '../data';
-import Friends from './Friends/Friends';
-import friendData from '../friends';
-import Transactions from './Transactions/Transactions';
-import transactionsData from '../transactions';
+import data from '../components/Data/data';
+import FriendsList from './Friends/Friends';
+import friendData from '../components/Data/friends';
+import TransactionsHistory from './Transactions/Transactions';
+import transactionsData from '../components/Data/transactions';
 
 export const App = () => {
   return (
@@ -21,9 +21,9 @@ export const App = () => {
       <Statistics title={'Upload stats'} stats={data} />
       <Statistics stats={data} />
 
-      <Friends friends={friendData} />
+      <FriendsList friends={friendData} />
 
-      <Transactions items={transactionsData} />
+      <TransactionsHistory items={transactionsData} />
     </div>
   );
 };

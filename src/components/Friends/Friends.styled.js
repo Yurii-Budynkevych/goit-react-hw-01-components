@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FriendsList = styled.ul`
+export const Friends = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-around;
